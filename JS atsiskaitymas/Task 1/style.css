@@ -63,3 +63,9 @@ form {
     font-size: 2em;
   }
 }
+
+#output{
+  text-align: center;
+  color: rgb(146, 100, 100);
+  font-size: 50px;
+}

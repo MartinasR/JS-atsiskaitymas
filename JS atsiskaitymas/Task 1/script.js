@@ -8,3 +8,17 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+let skaiciuoti = document.querySelector("#submit-btn").addEventListener('click', e =>{
+    e.preventDefault();
+    let skaiciavimas = document.querySelector("#search").value;
+    document.querySelector("#output").innerHTML = `
+    Svoris kg: ${skaiciavimas} <br>
+    Svoris lb: ${skaiciavimas * 2.2046} <br>
+    Svoris g: ${skaiciavimas * 0.001} <br>
+    Svoris oz: ${skaiciavimas * 35.274}
+    
+    `
+    
+
+});
