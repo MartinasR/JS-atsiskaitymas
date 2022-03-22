@@ -19,3 +19,13 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+let filterDogOwners = (masyvas) => {
+  return masyvas.filter(item => item.hasDog)
+}
+console.log(filterDogOwners(users))
+
+let filterAdults = (masyvas) => {
+  return masyvas.filter(item => item.age >= 18)
+}
+console.log(filterAdults(users))
