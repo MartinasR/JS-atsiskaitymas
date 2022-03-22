@@ -10,3 +10,16 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+fetch(ENDPOINT)
+    .then(res => res.json())
+    .then(data => {
+        data.map(element => {
+            document.querySelector("#output").innerHTML += `
+            <div class="masinos">
+                <h1>Brand: ${element.brand} </h1>
+                <p>Model: ${element.models}</p>
+            </div>
+           ` ;
+        });
+    })
